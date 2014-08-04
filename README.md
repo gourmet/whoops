@@ -17,7 +17,7 @@ Add the plugin to your project's `composer.json` - something like this:
 ```json
 {
 	"require": {
-		"PLUGIN_USER/whoops": "*"
+		"gourmet/whoops": "*"
 	}
 }
 ```
