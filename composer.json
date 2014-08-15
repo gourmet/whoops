@@ -32,4 +32,7 @@
 			"Gourmet\\Whoops\\": "."
 		}
 	}
+	, "extra": {
+		"installer-name": "Gourmet/Whoops"
+	}
 }
