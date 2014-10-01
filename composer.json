@@ -21,7 +21,7 @@
 		, "source": "http://github.com/gourmet/whoops"
 	}
 	, "require": {
-		"composer/installers": "*"
+		"cakephp/plugin-installer": "*"
 		, "filp/whoops": "~1.0"
 	}
 	, "suggest": {
@@ -31,8 +31,5 @@
 		"psr-4": {
 			"Gourmet\\Whoops\\": "."
 		}
-	}
-	, "extra": {
-		"installer-name": "Gourmet/Whoops"
 	}
 }
