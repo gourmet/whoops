@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/PLUGIN_USER/whoops.png?branch=master)](https://travis-ci.org/PLUGIN_USER/whoops) [![Coverage Status](https://coveralls.io/repos/PLUGIN_USER/whoops/badge.png?branch=master)](https://coveralls.io/r/PLUGIN_USER/whoops?branch=master) [![Total Downloads](https://poser.pugx.org/PLUGIN_USER/whoops/d/total.png)](https://packagist.org/packages/PLUGIN_USER/whoops) [![Latest Stable Version](https://poser.pugx.org/PLUGIN_USER/whoops/v/stable.png)](https://packagist.org/packages/PLUGIN_USER/whoops)
+[![Build Status](https://travis-ci.org/gourmet/whoops.png?branch=master)](https://travis-ci.org/gourmet/whoops) [![Coverage Status](https://coveralls.io/repos/gourmet/whoops/badge.png?branch=master)](https://coveralls.io/r/gourmet/whoops?branch=master) [![Total Downloads](https://poser.pugx.org/gourmet/whoops/d/total.png)](https://packagist.org/packages/gourmet/whoops) [![Latest Stable Version](https://poser.pugx.org/gourmet/whoops/v/stable.png)](https://packagist.org/packages/gourmet/whoops)
 
 # Whoops
 
