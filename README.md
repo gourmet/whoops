@@ -29,16 +29,16 @@ in your `vendor-dir`. It is recommended that you add /Plugins/Whoops to your
 
 As this plugin only offers a Whoops handler for CakePHP, there is no need to
 enable it per se. You only need to configure that handler instead of Cake's own
-`ErrorHandler`:
+`ErrorHandler` by replacing the following line in `bootstrap.php`:
 
 ```php
-(new \Gourmet\Whoops\Error\WhoopsHandler([
-    'errorLevel' => E_ALL & ~E_DEPRECATED,
-    'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
-    'skipLog' => [],
-    'log' => true,
-    'trace' => true,
-]));
+(new ErrorHandler(Configure::consume('Error')))->register();
+```
+
+with the Whoops handler:
+
+```php
+(new \Gourmet\Whoops\Error\WhoopsHandler(Configure::consume('Error')))->register();
 ```
 
 That's it!
