@@ -29,7 +29,13 @@ in your `vendor-dir`. It is recommended that you add /Plugins/Whoops to your
 
 As this plugin only offers a Whoops handler for CakePHP, there is no need to
 enable it per se. You only need to configure that handler instead of Cake's own
-`ErrorHandler` by replacing [this line][bootstrap] in `bootstrap.php` with:
+`ErrorHandler` by replacing the following line in `bootstrap.php`:
+
+```php
+(new ErrorHandler(Configure::consume('Error')))->register();
+```
+
+with the Whoops handler:
 
 ```php
 (new \Gourmet\Whoops\Error\WhoopsHandler(Configure::consume('Error')))->register();
@@ -46,4 +52,3 @@ Copyright (c) 2014, Jad Bitar and licensed under [The MIT License][mit].
 [composer:ignore]:http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md
 [mit]:http://www.opensource.org/licenses/mit-license.php
 [whoops]:http://filp.github.io/whoops/
-[bootstrap]:https://github.com/cakephp/app/blob/61e14c0807ebbe8b1aeeb007d927ddd2f1d728ab/config/bootstrap.php#L103
