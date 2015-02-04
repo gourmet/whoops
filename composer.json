@@ -21,8 +21,7 @@
 		, "source": "http://github.com/gourmet/whoops"
 	}
 	, "require": {
-		"cakephp/plugin-installer": "*"
-		, "filp/whoops": "~1.0"
+		"filp/whoops": "~1.0"
 	}
 	, "suggest": {
 		"phpunit/phpunit": "Allows automated tests to be run without system-wide install."
