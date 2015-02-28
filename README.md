@@ -12,7 +12,11 @@ __This is an unstable repository and should be treated as an alpha.__
 
 ## Install
 
-Add the plugin to your project's `composer.json` - something like this:
+Add the plugin to your project's `composer.json` using command:
+
+`php composer.phar require gourmet/whoops:*`
+
+or manually editing the file:
 
 ```json
 {
@@ -22,23 +26,18 @@ Add the plugin to your project's `composer.json` - something like this:
 }
 ```
 
-Because this plugin has the type `cakephp-plugin` set in its own `composer.json`,
-[Composer][composer] will install it inside your /Plugins directory, rather than
-in your `vendor-dir`. It is recommended that you add /Plugins/Whoops to your
-`.gitignore` file and here's [why][composer:ignore].
-
 As this plugin only offers a Whoops handler for CakePHP, there is no need to
 enable it per se. You only need to configure that handler instead of Cake's own
 `ErrorHandler` by replacing the following line in `bootstrap.php`:
 
 ```php
-(new ErrorHandler(Configure::consume('Error')))->register();
+(new ErrorHandler(Configure::read('Error')))->register();
 ```
 
 with the Whoops handler:
 
 ```php
-(new \Gourmet\Whoops\Error\WhoopsHandler(Configure::consume('Error')))->register();
+(new \Gourmet\Whoops\Error\WhoopsHandler(Configure::read('Error')))->register();
 ```
 
 That's it!
