@@ -2,28 +2,14 @@
 
 # Whoops
 
-Built to seamlessly integrate [Whoops][whoops] with [CakePHP][cakephp].
-
-__This is an unstable repository and should be treated as an alpha.__
-
-## Requirements
-
-* CakePHP 3.x
+Built to seamlessly integrate [Whoops] with [CakePHP 3].
 
 ## Install
 
-Add the plugin to your project's `composer.json` using command:
+Using [Composer]:
 
-`php composer.phar require gourmet/whoops:*`
-
-or manually editing the file:
-
-```json
-{
-	"require": {
-		"gourmet/whoops": "*"
-	}
-}
+```
+composer require gourmet/whoops:~1.0
 ```
 
 As this plugin only offers a Whoops handler for CakePHP, there is no need to
@@ -44,10 +30,9 @@ That's it!
 
 ## License
 
-Copyright (c) 2014, Jad Bitar and licensed under [The MIT License][mit].
+Copyright (c)2015, Jad Bitar and licensed under [The MIT License][mit].
 
-[cakephp]:http://cakephp.org
-[composer]:http://getcomposer.org
-[composer:ignore]:http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md
+[CakePHP 3]:http://cakephp.org
+[Composer]:http://getcomposer.org
 [mit]:http://www.opensource.org/licenses/mit-license.php
-[whoops]:http://filp.github.io/whoops/
+[Whoops]:http://filp.github.io/whoops/
