@@ -28,6 +28,24 @@ with the Whoops handler:
 
 That's it!
 
+
+## Editor
+Opening the file via click in the editor is supported for most major IDEs.
+
+Set your config as
+```php
+	'Whoops' => [
+		'editor' => true,
+	],
+```
+To enable it.
+
+If you are using a VM, e.g. CakeBox, you will also need the path mapping:
+```php
+		'userBasePath' => 'C:\wamp\www\cakebox\Apps\my-app.local',
+		'serverBasePath' => '/home/vagrant/Apps/my-app.local',
+```
+
 ## License
 
 Copyright (c)2015, Jad Bitar and licensed under [The MIT License][mit].
