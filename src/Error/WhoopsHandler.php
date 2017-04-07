@@ -74,7 +74,8 @@ class WhoopsHandler extends ErrorHandler
 			if ($userPath && $serverPath) {
 				$file = str_replace($serverPath, $userPath, $file);
 			}
-			$url = sprintf('phpstorm://open?file=%s&line=%s', $file, $line);
+			$pattern = Configure::read('Whoops.ideLinkPattern') ?: 'phpstorm://open?file=%s&line=%s';
+			$url = sprintf($pattern, $file, $line);
 			if (!Configure::read('Whoops.asAjax', false)) {
 				return $url;
 			}
