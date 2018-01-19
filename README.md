@@ -4,6 +4,9 @@
 
 Built to seamlessly integrate [Whoops] with [CakePHP 3].
 
+**DEPRECATED** Use **[dereuromark/cakephp-whoops](https://github.com/dereuromark/cakephp-whoops) package** instead.
+
+
 ## Install
 
 Using [Composer]:
